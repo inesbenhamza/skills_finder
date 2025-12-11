@@ -1,0 +1,50 @@
+activity_sector: Marketing
+job_role: Marketing
+languages:
+- language_code: FR
+  level: 100
+  required: true
+- language_code: EN
+  level: 100
+  required: true
+months: 0
+number_of_workday_perweek: 5
+required_experience: 3
+responsabilites:
+- "Participer \xE0 l\u2019\xE9laboration de strat\xE9gies marketing"
+- "Coordonner et ex\xE9cuter des campagnes multicanal"
+- Produire du contenu clair et percutant
+- "Assurer la coh\xE9rence de la marque"
+- "G\xE9rer les calendriers \xE9ditoriaux"
+- Effectuer une veille constante des tendances social media
+- "Pr\xE9parer des pr\xE9sentations internes et externes"
+- Analyser des indicateurs de campagne simples
+start_date: ''
+technologies:
+- level: 60
+  name: Meta Business Suite
+  required: false
+- level: 60
+  name: Mailchimp
+  required: false
+- level: 20
+  name: CMS
+  required: false
+- level: 60
+  name: Google Analytics
+  required: false
+- level: 60
+  name: Google Looker Studio
+  required: false
+- level: 60
+  name: Google Workspace
+  required: false
+- level: 60
+  name: Canva
+  required: false
+- level: 60
+  name: Notion
+  required: false
+- level: 40
+  name: Figma
+  required: false

@@ -1,0 +1,58 @@
+model:
+  name: gemma3:12b
+  think: false
+
+embedding_model: skills_finetuned_hierarchy  # Fine-tuned for hierarchical skill relationships
+skills_csv: skills-finder-hackathon-hec-x-sbi/skillscleaned.csv
+skills_embedding_file: skills-finder-hackathon-hec-x-sbi/skills_encoded.npz
+
+# Mission embedding model (for mission similarity)
+# OPTION 1: Base model (no fine-tuning) - for fair evaluation/testing
+mission_embedding_model: paraphrase-multilingual-mpnet-base-v2  # Base model (no fine-tuning)
+# OPTION 2: Fine-tuned model - for production (better performance but uses ground truth labels)
+# mission_embedding_model: models/modelfinetuned_domain  # Fine-tuned for domain distinction
+
+skills:
+  # Multiplier to boost consultant that have required technologies
+  required_multiplier: 2
+  # Min level for a embeddings to be considered the same
+  # Lowered from 0.6 to 0.45 to better match skills like "Jira" -> "Atlassian JIRA Software" (similarity ~0.54)
+  min_level: 0.6
+  skills_weight: 0.5
+
+mission_context:
+  # How much a mission has to be relevant to be considered in the score
+  percentile: 90
+  mission_weight: 0.5
+
+
+#not used in final model
+weight_optimization:
+  enabled: False
+  method: variance
+
+  
+  # SUPERVISED LEARNING: Learn optimal weights from historical job role labels
+  # Uses full_df.csv with JOB_RULE column to train a model that predicts optimal weights
+  # This minimizes loss for top-5 accuracy by learning from past successful matches
+  use_learning: False # Set to true to enable supervised learning
+  labels_file: full_df.csv  # CSV file with JOB_RULE column (ground truth labels)
+
+domain_filtering:
+  use_consultant_level: false  # Set to true only in production when you want to filter by known job roles
+
+business_context:
+  skill_met_value: 0
+
+languages:
+  # If the language is required, a consultant can 
+  # be at most 40 points away to not be heavily penalized
+  acceptable_difference: 40
+  # Score will be divided by this factor
+  penality: 10
+
+disponibility:
+  # between 0 and 1. This is the maximum penalty that 
+  # a consultant can receive if he is never available
+  # 1 means a consultant fully booked will NEVER be considered
+  maximum_penalty: 2

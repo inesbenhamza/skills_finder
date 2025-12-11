@@ -1,0 +1,49 @@
+activity_sector: Marketing Analytics
+languages:
+- language_code: FR
+  level: 100
+  required: true
+- language_code: EN
+  level: 100
+  required: true
+months: 10
+number_of_workday_perweek: 5
+required_experience: 5
+responsabilites:
+- "G\xE9rer et am\xE9liorer les jeux de donn\xE9es marketing."
+- "D\xE9velopper des tableaux de bord et rapports dans Power BI."
+- Optimiser les performances des datasets Power BI.
+- "Int\xE9grer les donn\xE9es issues de diverses plateformes (Google Analytics, CRM,\
+  \ outils marketing)."
+- "R\xE9diger du code SQL, DAX et Power Query performant."
+- "Collaborer \xE9troitement avec les analystes pour comprendre leurs besoins."
+- "Cr\xE9er des requ\xEAtes dans Databricks et SSMS."
+- "Assurer la qualit\xE9 et la fiabilit\xE9 des donn\xE9es."
+- "Soutenir les coll\xE8gues via des revues de code et du support technique."
+- "Concevoir des mod\xE8les de donn\xE9es adapt\xE9s aux objectifs m\xE9tiers."
+start_date: ''
+technologies:
+- level: 100
+  name: Power BI
+  required: true
+- level: 100
+  name: SQL
+  required: true
+- level: 80
+  name: DAX
+  required: true
+- level: 80
+  name: Power Query
+  required: true
+- level: 80
+  name: Databricks
+  required: true
+- level: 60
+  name: SSMS
+  required: false
+- level: 60
+  name: Google Analytics
+  required: false
+- level: 60
+  name: CRM
+  required: false

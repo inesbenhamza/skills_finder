@@ -1,0 +1,36 @@
+activity_sector: Healthcare
+job_role: Healthcare
+languages:
+- language_code: FR
+  level: 75
+  required: true
+- language_code: EN
+  level: 75
+  required: true
+months: 0
+number_of_workday_perweek: 5
+required_experience: 5
+responsabilites:
+- "\xC9valuer l\u2019\xE9tat de sant\xE9 des patient\xB7e\xB7s et \xE9tablir des diagnostics\
+  \ cliniques."
+- "\xC9laborer et ajuster les plans de traitement, incluant la prescription de m\xE9\
+  dicaments selon le champ de pratique autoris\xE9."
+- "Assurer la prise en charge des urgences cliniques en collaboration avec l\u2019\
+  \xE9quipe m\xE9dicale."
+- "Suivre l\u2019\xE9volution des patient\xB7e\xB7s et assurer une coordination continue\
+  \ avec les m\xE9decins sp\xE9cialistes."
+- "Effectuer des interventions avanc\xE9es en soins infirmiers selon les protocoles\
+  \ en vigueur."
+- "Documenter rigoureusement les interventions et observations dans le dossier m\xE9\
+  dical \xE9lectronique."
+- "Contribuer \xE0 l\u2019am\xE9lioration des pratiques cliniques et participer aux\
+  \ r\xE9unions interdisciplinaires."
+- "Assurer un r\xF4le d\u2019\xE9ducation aupr\xE8s des patient\xB7e\xB7s, familles\
+  \ et professionnels en formation."
+- "Promouvoir les standards de qualit\xE9 et de s\xE9curit\xE9 des soins au sein de\
+  \ l\u2019unit\xE9."
+start_date: ''
+technologies:
+- level: 60
+  name: "Dossier M\xE9dical \xC9lectronique (DM\xC9)"
+  required: true

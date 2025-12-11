@@ -1,0 +1,52 @@
+activity_sector: Agroalimentaire
+languages:
+- language_code: FR
+  level: 100
+  required: true
+- language_code: EN
+  level: 100
+  required: true
+months: 12
+number_of_workday_perweek: 5
+required_experience: 3
+responsabilites:
+- "Mettre en place et maintenir un cadre Agile efficace propice \xE0 la performance\
+  \ collective."
+- "Faciliter l’ensemble des cérémonies Scrum (Daily Scrum, Sprint Planning, Sprint 
+    Review, Rétrospective, Refinement)"
+- "Assurer une gestion proactive des obstacles, afin de garantir le bon déroulement 
+  des livrables."
+- "Accompagner l’équipe dans le développement de son autonomie et de sa 
+  capacité d’auto-organisation"
+- "Agir en tant que coach Agile, en guidant l’équipe et les parties prenantes dans la 
+  compréhension et l’application des valeurs, principes et pratiques agiles."
+- "Promouvoir une culture de collaboration et d’amélioration continue."
+- "Aider le Product Owner à gérer efficacement le backlog produit, à définir les 
+priorités et à maximiser la valeur livrée."
+- "Mesurer et analyser la performance de l’équipe via des indicateurs clés (vélocité, 
+burndown charts, lead time, etc.), en utilisant des outils adaptés."
+- "PProtéger l’équipe des interférences externes et veiller à maintenir un climat de 
+travail serein."
+start_date: ''
+technologies:
+- level: 90
+  name: Jira
+  required: true
+- level: 60
+  name: Confluence
+  required: true
+- level: 60
+  name: Microsoft Teams
+  required: true
+- level: 50
+  name: Slack
+  required: true
+- level: 20
+  name: Miro
+  required: false
+- level: 60
+  name: Power BI
+  required: true
+- level: 80
+  name: Excel
+  required: true

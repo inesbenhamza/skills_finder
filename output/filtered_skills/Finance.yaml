@@ -1,0 +1,45 @@
+activity_sector: Financial services
+languages:
+- language_code: FR
+  level: 100
+  required: true
+- language_code: EN
+  level: 100
+  required: true
+months: 0
+number_of_workday_perweek: 5
+required_experience: 3
+responsabilites:
+- "Participer au processus budg\xE9taire annuel et aux pr\xE9visions trimestrielles."
+- "Pr\xE9parer des analyses financi\xE8res d\xE9taill\xE9es : \xE9carts, rentabilit\xE9\
+  , tendances, sc\xE9narios."
+- "Consolider les r\xE9sultats provenant de diff\xE9rentes unit\xE9s d\u2019affaires\
+  \ et syst\xE8mes ERP."
+- "Concevoir des mod\xE8les financiers align\xE9s sur les besoins de planification\
+  \ et de performance."
+- "Produire des rapports mensuels \xE0 destination de la direction et des partenaires\
+  \ internes."
+- "Collaborer \xE9troitement avec l\u2019\xE9quipe comptable et les responsables op\xE9\
+  rationnels."
+- "Maintenir et optimiser les outils de reporting (Excel avanc\xE9, ERP, EPM/CPM)."
+- "Contribuer \xE0 l\u2019\xE9volution des processus financiers et \xE0 la mise en\
+  \ place de bonnes pratiques."
+- "Participer \xE0 des projets sp\xE9ciaux (implantation d\u2019outils, am\xE9liorations\
+  \ de processus, analyses ad hoc)."
+start_date: ''
+technologies:
+- level: 90
+  name: Excel
+  required: true
+- level: 10
+  name: SAP
+  required: false
+- level: 10
+  name: Oracle
+  required: false
+- level: 10
+  name: Tagetik
+  required: false
+- level: 10
+  name: Hyperion
+  required: false

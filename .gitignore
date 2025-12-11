@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Model files (large, should use Git LFS or exclude)
+models/*/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+checkpoints/
+
+# Fine-tuned models in notebooks (old/unused - 4.4GB total)
+notebooks/modelfinetuned/
+notebooks/modelfinetuned2/
+notebooks/modelfinetuned_MNR/
+notebooks/modelfinetuned_CosineSim/
+notebooks/checkpoints/
+
+# Fine-tuned models (exclude large model files - use Git LFS or download separately)
+# Keep config files but exclude large model weights
+skills_finetuned_hierarchy/model.safetensors
+models/modelfinetuned_domain/model.safetensors
+models/skill_model_embeddings_best.pt
+
+# Data files (may contain sensitive information)
+# Exclude large CSV files (>10MB)
+data/raw/skills-finder-hackathon-hec-x-sbi/mission_encoded.csv
+*.npz
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Streamlit
+.streamlit/
+
+# Hugging Face cache (optional, can be large)
+# .cache/huggingface/
+

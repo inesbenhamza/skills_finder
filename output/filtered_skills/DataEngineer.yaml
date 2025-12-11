@@ -1,0 +1,55 @@
+activity_sector: retail
+languages:
+- language_code: FR
+  level: 100
+  required: true
+- language_code: EN
+  level: 100
+  required: true
+months: 12
+number_of_workday_perweek: 5
+required_experience: 5
+responsabilites:
+- Conceiving and implementing data engineering solutions
+- Designing and building data pipelines
+- Ensuring data quality and reliability
+- Collaborating with cross-functional teams
+- Participating in the development of data engineering standards
+start_date: ''
+technologies:
+- level: 80
+  name: Azure Data Factory
+  required: true
+- level: 100
+  name: Apache Spark
+  required: true
+- level: 80
+  name: Scala
+  required: true
+- level: 90
+  name: Python
+  required: true
+- level: 80
+  name: Azure Data Lake Storage (Gen2)
+  required: true
+- level: 90
+  name: Azure Databricks
+  required: true
+- level: 80
+  name: Kafka
+  required: true
+- level: 80
+  name: Azure DevOps
+  required: true
+- level: 60
+  name: Parquet
+  required: false
+- level: 60
+  name: Delta Lake
+  required: false
+- level: 60
+  name: Synapse Analytics
+  required: false
+- level: 60
+  name: Azure Purview
+  required: false
