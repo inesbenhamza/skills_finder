@@ -2,15 +2,19 @@ model:
   name: gemma3:12b
   think: false
 
+# Skills embedding model (for skill similarity)
+# OPTION 1: Base model (no fine-tuning) - for comparison/evaluation
+# embedding_model: BAAI/bge-m3  # Base model (no fine-tuning)
+# OPTION 2: Fine-tuned model - for production (better hierarchical relationships)
 embedding_model: skills_finetuned_hierarchy  # Fine-tuned for hierarchical skill relationships
 skills_csv: skills-finder-hackathon-hec-x-sbi/skillscleaned.csv
 skills_embedding_file: skills-finder-hackathon-hec-x-sbi/skills_encoded.npz
 
 # Mission embedding model (for mission similarity)
 # OPTION 1: Base model (no fine-tuning) - for fair evaluation/testing
-mission_embedding_model: paraphrase-multilingual-mpnet-base-v2  # Base model (no fine-tuning)
+# mission_embedding_model: paraphrase-multilingual-mpnet-base-v2  # Base model (no fine-tuning)
 # OPTION 2: Fine-tuned model - for production (better performance but uses ground truth labels)
-# mission_embedding_model: models/modelfinetuned_domain  # Fine-tuned for domain distinction
+mission_embedding_model: models/modelfinetuned_domain  # Fine-tuned for domain distinction
 
 skills:
   # Multiplier to boost consultant that have required technologies
