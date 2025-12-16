@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Model files
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+*.h5
+*.hdf5
+
+# Data files
+*.npz
+*.npy
+*.csv
+*.parquet
+
+# Model directories
+models/
+skills_finetuned_*/
+notebooks/modelfinetuned*/
+checkpoints/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output
+output/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
