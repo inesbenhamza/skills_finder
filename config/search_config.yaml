@@ -1,0 +1,56 @@
+model:
+  name: gemma3:12b 
+  think: false
+
+embedding_model: skills_finetuned_hierarchy
+#embedding_model: BAAI/bge-m3
+
+skills_csv: skills/skillscleaned.csv
+skills_embedding_file: skills/skills_encoded_hierarchy.npz
+#skills_embedding_file: skills/skills_encoded_bge-m3.npz 
+
+
+
+skills:
+
+  use_string_matching: False
+  # Multiplier to boost consultant that have required technologies
+  required_multiplier: 2
+  # Min level for a embeddings to be considered the same
+  # Lowered from 0.6 to 0.45 to better match skills like "Jira" -> "Atlassian JIRA Software" (similarity ~0.54)
+  min_level: 0.5
+  skills_weight: 0.5
+
+
+# Mission embedding model (for mission similarity)
+
+mission_embedding_model: paraphrase-multilingual-mpnet-base-v2 
+#mission_embedding_model: models/modelfinetuned_domain
+
+
+
+
+
+
+mission_context:
+  # How much a mission has to be relevant to be considered in the score
+  percentile: 90
+  mission_weight: 0.5
+
+
+
+business_context:
+  skill_met_value: 0
+
+languages:
+  # If the language is required, a consultant can 
+  # be at most 40 points away to not be heavily penalized
+  acceptable_difference: 40
+  # Score will be divided by this factor
+  penality: 10
+
+disponibility:
+  # between 0 and 1. This is the maximum penalty that 
+  # a consultant can receive if he is never available
+  # 1 means a consultant fully booked will NEVER be considered
+  maximum_penalty: 2
